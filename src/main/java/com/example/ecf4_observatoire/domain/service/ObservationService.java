@@ -1,7 +1,7 @@
 package com.example.ecf4_observatoire.domain.service;
 
 import com.example.ecf4_observatoire.domain.model.Observation;
-import com.example.ecf4_observatoire.infrastructure.repository.ObservationRepository;
+import com.example.ecf4_observatoire.domain.repository.ObservationRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

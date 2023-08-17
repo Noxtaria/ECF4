@@ -1,4 +1,4 @@
 package com.example.ecf4_observatoire.domain.service;
 
-public class SearchService {
+public class ObservationServiceImpl {
 }

@@ -26,6 +26,11 @@ public class Observation {
         this.celestialObject = celestialObject;
     }
 
+    public Observation(Long id, String description) {
+        this.id = id;
+        this.description = description;
+    }
+
     public Long getId() {
         return id;
     }

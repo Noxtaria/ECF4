@@ -1,7 +1,7 @@
 package com.example.ecf4_observatoire.domain.service;
 
 import com.example.ecf4_observatoire.domain.model.CelestialObject;
-import com.example.ecf4_observatoire.infrastructure.repository.CelestialObjectRepository;
+import com.example.ecf4_observatoire.domain.repository.CelestialObjectRepository;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;

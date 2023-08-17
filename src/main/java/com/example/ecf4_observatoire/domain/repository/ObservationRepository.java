@@ -1,4 +1,4 @@
-package com.example.ecf4_observatoire.infrastructure.repository;
+package com.example.ecf4_observatoire.domain.repository;
 
 import com.example.ecf4_observatoire.domain.model.Observation;
 import org.springframework.data.jpa.repository.JpaRepository;
