@@ -16,6 +16,13 @@ public class Observation {
     @JoinColumn(name = "celestial_object_id")
     private CelestialObject celestialObject;
 
+    @Column(name = "user_id")
+    private Long userId;
+
+    public Long getUserId() {
+        return userId;
+    }
+
     public Observation() {
     }
 

@@ -1,4 +1,8 @@
 package com.example.ecf4_observatoire.domain.service;
 
-public class UserService {
+import com.example.ecf4_observatoire.domain.model.User;
+
+public interface UserService {
+    User createUser(User user);
+    User getUserByUsername(String username);
 }

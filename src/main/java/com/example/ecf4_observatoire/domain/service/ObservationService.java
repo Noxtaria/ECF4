@@ -31,4 +31,24 @@ public class ObservationService {
         observation.setObservationDate(LocalDateTime.now());
         return observationRepository.save(observation);
     }
+
+    public List<Observation> searchObservations(Long celestialObjectId, LocalDateTime date, Long userId) {
+        if (celestialObjectId != null && date != null && userId != null) {
+            return observationRepository.findByCelestialObject_IdAndObservationDateAndUserId(celestialObjectId, date, userId);
+        } else if (celestialObjectId != null && date != null) {
+            return observationRepository.findByCelestialObject_IdAndObservationDate(celestialObjectId, date);
+        } else if (celestialObjectId != null && userId != null) {
+            return observationRepository.findByCelestialObject_IdAndUserId(celestialObjectId, userId);
+        } else if (date != null && userId != null) {
+            return observationRepository.findByObservationDateAndUserId(date, userId);
+        } else if (celestialObjectId != null) {
+            return observationRepository.findByCelestialObject_Id(celestialObjectId);
+        } else if (date != null) {
+            return observationRepository.findByObservationDate(date);
+        } else if (userId != null) {
+            return observationRepository.findByUserId(userId);
+        } else {
+            return observationRepository.findAll();
+        }
+    }
 }
